@@ -3,7 +3,6 @@ _Resume Builder based on your GitHub stats/ activity for people who are as lazy 
 <br/>
 
 Enter you(or any other) github username and we can generate a resume based on your github Stats
-<br>
 Tech stack used- Reactjs
 npm modules- geist-ui, octokit
 
@@ -14,3 +13,5 @@ Team
 ![Image-1](https://pic-hoster.net/images/2021/09/04/Screenshot-11.png)
 
 ![image-2](https://pic-hoster.net/images/2021/09/04/Screenshot-13.png)
+![Image-3](https://pic-hoster.net/images/2021/09/04/Screenshot-16.png)
+
