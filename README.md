@@ -7,7 +7,7 @@ Tech stack used- Reactjs
 npm modules- geist-ui, octokit
 
 Team
-!(Asher Ms)[https://github.com/Asher-MS]
+![Asher Mathews](https://github.com/Asher-MS)
 ![Adam Oommen](https://github.com/weberstills)
 
 ![Image-1](https://pic-hoster.net/images/2021/09/04/Screenshot-11.png)
