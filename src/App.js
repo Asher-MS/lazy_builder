@@ -63,6 +63,20 @@ function App() {
       })    
     })// Fetch the data of the repositories of the user and store it in an Array of Javascript objects
   }
+  const languageFinder=function(userLocation){
+    console.log(userLocation);
+    if(userLocation.search("kerala")==0 || userLocation.search("Kerala")==0){
+      console.log("Kerala Found");
+      setUserLanguages(userLanguages=>[...userLanguages,"Malayalam"]);
+      
+      
+    }else{
+      console.log("Kerala Not Found");
+      
+    }
+
+  }
+
   return (
    <div>testt</div> 
   );
