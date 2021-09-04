@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  let [name, setName] = useState(null);
+  let [bio, setBio] = useState(null);
+  let [avatar, setAvatar] = useState(null);
+  let [currentUser, setcurrentUser] = useState(null);
+  let [isthere, istherefunction] = useState(false)
+  let [userRepos,setUserRepos]=useState([]);
+  let userLocation="";
+  let [userLanguages,setUserLanguages]=useState(["English"])
+  let [followers, setFollowers] = useState(0)
+  let [following, setFollowing] = useState(0)
+  let [reponumber, setrepos] = useState(0)
+  let [day,setday] = useState('')
+  let [blog,setblog] = useState()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>testt</div> 
   );
 }
 
