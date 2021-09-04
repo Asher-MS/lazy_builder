@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import { Card, Grid } from '@geist-ui/react';
+import { Spacer } from '@geist-ui/react';
+import { Input } from '@geist-ui/react';
+import Trial from './Trial';
+import { Text, Link, Image, Button } from '@geist-ui/react';
 const { Octokit } = require('@octokit/rest');
 
 function App() {
@@ -78,7 +83,14 @@ function App() {
   }
 
   return (
-   <div>testt</div> 
+    <div className="App">
+    {isthere ? <div>
+     <Trial day={day} blog={blog} reponumber={reponumber} followers={followers} following={following} bio={bio} peru={name} photo={avatar} repos={userRepos} location={userLocation} languages={userLanguages}/>
+    </div> : <h1>heey guys</h1>
+      }
+      
+   
+  </div>
   );
 }
 
