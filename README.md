@@ -10,8 +10,8 @@ Team <br/>
 [Asher Ms](https://github.com/Asher-MS) <br/>
 [Adam Oommen](https://github.com/weberstills)
 
-![Image-1](https://pic-hoster.net/images/2021/09/04/Screenshot-11.png)
+![Image-1](https://pic-hoster.net/images/2021/09/04/Screenshot-17.png)
 
-![image-2](https://pic-hoster.net/images/2021/09/04/Screenshot-13.png)
-![Image-3](https://pic-hoster.net/images/2021/09/04/Screenshot-16.png)
+![image-2](https://pic-hoster.net/images/2021/09/04/Screenshot-18.png)
+![Image-3](https://pic-hoster.net/images/2021/09/04/Screenshot-19.png)
 
