@@ -56,6 +56,21 @@ let dayfinal=firstday.substring(0,10)
               </div> {/* end description */}
             </section>
    {/* add the project listing here*/} 
+             <section id="projects">
+              <h2 className="maintitle">Projects Undertaken</h2>
+              <div className="description">
+                {props.repos.map((repo)=>{return(
+                  <section className="project">
+                  <h3 className="title">{repo.repo_name}</h3>
+                  <div className="meta">
+                    <span className="field">Project Field</span> <span className="date">Aug 2010 - Nov2010</span>
+                  </div>
+                  <p className="description">{repo.repo_description}</p>
+                </section> 
+
+                )})}	
+              </div> {/* end description */}
+            </section>	
     
               	
               	
