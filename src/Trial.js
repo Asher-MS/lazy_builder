@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button} from '@geist-ui/react';
 import './Trial.css'
 function Trial(props) {
   let firstday=props.day
@@ -71,6 +72,7 @@ let dayfinal=firstday.substring(0,10)
                 )})}	
               </div> {/* end description */}
             </section>	
+            <Button onClick={window.print} type="success-light">Download Resume</Button>
     
               	
               	
