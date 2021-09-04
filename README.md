@@ -6,8 +6,8 @@ Enter you(or any other) github username and we can generate a resume based on yo
 Tech stack used- Reactjs
 npm modules- geist-ui, octokit
 
-Team
-(Asher Ms)[https://github.com/Asher-MS)
+Team <br/>
+(Asher Ms)[https://github.com/Asher-MS) <br/>
 [Adam Oommen](https://github.com/weberstills)
 
 ![Image-1](https://pic-hoster.net/images/2021/09/04/Screenshot-11.png)
