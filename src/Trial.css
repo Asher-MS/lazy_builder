@@ -221,6 +221,7 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 /*
