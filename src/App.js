@@ -5,7 +5,7 @@ import { Card, Grid } from '@geist-ui/react';
 import { Spacer } from '@geist-ui/react';
 import { Input } from '@geist-ui/react';
 import Trial from './Trial';
-import { Text, Link, Image, Button } from '@geist-ui/react';
+import { Text, Link, Image, Button,Textarea } from '@geist-ui/react';
 const { Octokit } = require('@octokit/rest');
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
   let [reponumber, setrepos] = useState(0);
   let [day,setday] = useState('');
   let [blog,setblog] = useState();
+  let [isError,setIsError]=useState(false);
 
 
   const octokit = new Octokit({
@@ -34,7 +35,7 @@ function App() {
     octokit.rest.users.getByUsername({
       username: currentUser,
     }).then((res) => {
-
+      istherefunction(true);
       setName(res.data["name"]);
       setBio(res.data["bio"]);
       setAvatar(res.data["avatar_url"]);
@@ -47,7 +48,7 @@ function App() {
       console.log(res.data["location"]);    
       languageFinder(userLocation);
       
-    });//handle the Button Click and get the user data from the github API using the currentusername
+    }).catch((error)=>{console.log(error);setIsError(true)});//handle the Button Click and get the user data from the github API using the currentusername
 
 
     octokit.rest.repos.listForUser({
@@ -96,9 +97,14 @@ function App() {
  
         <Input  onChange={(e) => { setcurrentUser(e.target.value) }}/>
         <Button  shadow type="secondary" auto scale={0.35} onClick={() => {
-          istherefunction(true);
+          
           handleClick()
-        }}>generate</Button> </div>
+        }}>generate</Button> 
+        <br/>
+        <Spacer y={3}/>
+        {isError?<Textarea type="error" height="65px" value="NO Such User" />:<h1></h1>}
+        </div>
+        
         </div> 
       }
       
