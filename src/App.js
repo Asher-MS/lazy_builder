@@ -86,7 +86,20 @@ function App() {
     <div className="App">
     {isthere ? <div>
      <Trial day={day} blog={blog} reponumber={reponumber} followers={followers} following={following} bio={bio} peru={name} photo={avatar} repos={userRepos} location={userLocation} languages={userLanguages}/>
-    </div> : <h1>heey guys</h1>
+    </div> :<div>
+      <div className="titleahne">
+        
+      <Text h1>  <Spacer h={2} />
+        We Are As Lazy as You </Text>
+        </div>
+      <div className="inputbar">
+ 
+        <Input  onChange={(e) => { setcurrentUser(e.target.value) }}/>
+        <Button  shadow type="secondary" auto scale={0.35} onClick={() => {
+          istherefunction(true);
+          handleClick()
+        }}>generate</Button> </div>
+        </div> 
       }
       
    
