@@ -1,8 +1,9 @@
 # LazyBuilder
 _Resume Builder based on your GitHub stats/ activity for people who are as lazy as us_
 <br/>
-<a href="https://hacknight-github.vercel.app/">Visit</a>
-Enter your(or any other) github username and we can generate a resume based on your github Stats <br/> <br/>
+
+Enter your(or any other) github username and we can generate a resume based on your github Stats<br/><br/><a href="https://hacknight-github.vercel.app/">Visit</a>
+<br/> <br/>
 Tech stack used- Reactjs
 npm modules- geist-ui, octokit
 
