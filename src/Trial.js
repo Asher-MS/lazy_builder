@@ -19,6 +19,7 @@ let dayfinal=firstday.substring(0,10)
               <span className="organization"></span>
              
             </div>
+            <div id= "profilelink"><a href={props.link}>Github</a></div>
             <div>
               <h3>Languages Known :</h3> 
               {props.languages.map((lang)=>{return <h5>{lang}</h5>})}

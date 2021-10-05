@@ -13,6 +13,7 @@ function App() {
   let [bio, setBio] = useState(null);
   let [avatar, setAvatar] = useState(null);
   let [currentUser, setcurrentUser] = useState(null);
+  let [currentUserLink, setcurrentUserLINK] = useState(null);
   let [isthere, istherefunction] = useState(false);
   let [userRepos,setUserRepos]=useState([]);
   let userLocation="";
@@ -86,7 +87,7 @@ function App() {
   return (
     <div className="App">
     {isthere ? <div>
-     <Trial day={day} blog={blog} reponumber={reponumber} followers={followers} following={following} bio={bio} peru={name} photo={avatar} repos={userRepos} location={userLocation} languages={userLanguages}/>
+     <Trial day={day} blog={blog} reponumber={reponumber} followers={followers} following={following} bio={bio} link ={currentUserLink} peru={name} photo={avatar} repos={userRepos} location={userLocation} languages={userLanguages}/>
     </div> :<div>
       <div className="titleahne">
         
@@ -95,7 +96,7 @@ function App() {
         </div>
       <div className="inputbar">
  
-        <Input  onChange={(e) => { setcurrentUser(e.target.value) }}/>
+        <Input  onChange={(e) => { setcurrentUser(e.target.value); setcurrentUserLINK("https://github.com/"+e.target.value); }}/>
         <Button  shadow type="secondary" auto scale={0.35} onClick={() => {
           
           handleClick()
