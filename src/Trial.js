@@ -69,6 +69,7 @@ let dayfinal=firstday.substring(0,10)
                     <span className="field">Project Field</span> <span className="date">Aug 2010 - Nov2010</span>
                   </div>
                   <p className="description">{repo.repo_description}</p>
+                  <p><a href={repo.repo_url}>Link</a></p>
                 </section> 
 
                 )})}	
