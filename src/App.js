@@ -96,7 +96,12 @@ function App() {
         </div>
       <div className="inputbar">
  
-        <Input  onChange={(e) => { setcurrentUser(e.target.value); setcurrentUserLINK("https://github.com/"+e.target.value); }}/>
+        <Input  onChange={(e) => { setcurrentUser(e.target.value); setcurrentUserLINK("https://github.com/"+e.target.value); }}
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter'){
+                    handleClick();
+                  }    
+                }}/>
         <Button  shadow type="secondary" auto scale={0.35} onClick={() => {
           
           handleClick()
